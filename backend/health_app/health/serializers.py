@@ -15,8 +15,8 @@ class UserHealthProfileSerializer(serializers.ModelSerializer):
         fields = [
             'height', 'weight', 'weight_type', 'waist', 'waist_choices',
             'smoking_status', 'vaping_status', 'blood_pressure', 'a1c_level',
-            'blood_sugar_level', 'pregnant', 'malaria', 'covid'
-        ]
+            'blood_sugar_level', 'pregnant', 'malaria', 'covid' , "heart_rate",
+            "respiratory_rate","body_temperature","pulse_oximetry","bmi_percentile",]
         read_only_fields = ['id', 'user'] 
 
     def validate_blood_pressure(self, value):
@@ -60,7 +60,11 @@ class ChangeHealthDataStatusSerializer(serializers.Serializer):
     is_blood_sugar_level_selling=serializers.BooleanField(required=True)
     is_pregnant_selling=serializers.BooleanField(required=True)
     is_malaria_selling=serializers.BooleanField(required=True)
-    is_covid_selling=serializers.BooleanField(required=True)
+    is_heart_rate_selling=serializers.BooleanField(required=True)
+    is_respiratory_rate_selling=serializers.BooleanField(required=True)
+    is_body_temperature_selling=serializers.BooleanField(required=True)
+    is_pulse_oximetry_selling=serializers.BooleanField(required=True)
+    is_bmi_percentile_selling=serializers.BooleanField(required=True)
     # secret_key=serializers.CharField(required=True,allow_blank=False,allow_null=False)
     # def __init__(self, *args, **kwargs):
     #     super().__init__(*args, **kwargs)
