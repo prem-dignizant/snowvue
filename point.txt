@@ -1,0 +1,15 @@
+
+Patient table - 
+    --> Patient ID (PK) is seller foregin key ??
+    1. seller health point is seller revenue & revenue is change countinuesly so we need to every time update Patient table (health point)
+
+    2. seller convert his health point  to Reward points then it revenue was be zero .
+
+    3. health point == Reward points , is equal so why we need to add both field ??
+
+Transaction Table-
+    1. what is Start Date & Transaction date
+
+
+Market Place Table - 
+    1. what is meaning of this field (Number,Weight,Start Date,End Date)

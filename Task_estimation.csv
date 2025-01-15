@@ -1,0 +1,15 @@
+App,Task,time (hrs)
+health app,create new marketplace app & setup,0.5
+,"Create DB table Patient , Transaction , MarketPlace",1.5
+,CRUD api for patient table & modify purchess api to update health/reward point,4
+,create transaction / retreive transaction / modify transaction api ,4
+,store market place data  to db & view all market place order api,2
+,create a food table with multiple food & display all food ,2
+Agriculture app,Create Farmer table in Agriculture project,1
+,CRUD api for Farmer table,3
+,Create Trial table & Using randomization add user to diffrent groups,4
+,,
+other ,test all api & functionality,6
+,update all api on server ,3
+,,
+Total hrs,,31
